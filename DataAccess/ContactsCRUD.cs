@@ -5,7 +5,7 @@ using System.Data.SqlClient;
 
 namespace DataAccess
 {
-    public static class CRUD
+    public static class ContactsCRUD
     {
         public static bool Create(Contact contact)
         {

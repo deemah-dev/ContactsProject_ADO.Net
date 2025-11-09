@@ -1,6 +1,6 @@
 <Solution>
-  <Project Path="Business/Business.csproj" />
-  <Project Path="DataAccess/DataAccess.csproj" />
-  <Project Path="Modules/Modules.csproj" />
-  <Project Path="Presentation/Presentation.csproj" />
+  <Project Path="Business/Business.csproj" Id="5978cea5-7773-4899-94bd-d7a438d556c8" />
+  <Project Path="DataAccess/DataAccess.csproj" Id="fe75b1a0-ce0a-4d28-9471-1552b6c86ea6" />
+  <Project Path="Modules/Modules.csproj" Id="daf4c635-7ce8-4197-a09c-443098bec62e" />
+  <Project Path="Presentation/Presentation.csproj" Id="f6efedd0-3238-4c1b-83bb-d21896432e57" />
 </Solution>

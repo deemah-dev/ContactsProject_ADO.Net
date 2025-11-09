@@ -6,11 +6,16 @@ namespace Business
 {
     public static class ContactService
     {
+        public static bool AddNewContact(Contact contact)
+        {
+            return ContactsCRUD.Create(contact);
+        }
+
         public static Contact FindContact(int id)
         {
-            if (CRUD.IsExist(id))
+            if (ContactsCRUD.IsExist(id))
             {
-                Contact contact = CRUD.Read(id);
+                Contact contact = ContactsCRUD.Read(id);
                 return contact;
             }
             return null;
@@ -18,35 +23,30 @@ namespace Business
 
         public static bool UpdateContact(int id, Contact contact)
         {
-            if (CRUD.IsExist(id))
+            if (ContactsCRUD.IsExist(id))
             {
-                return CRUD.Update(id, contact);
+                return ContactsCRUD.Update(id, contact);
             }
             return false;
         }
 
-        public static bool AddNewContact(Contact contact)
-        {
-            return CRUD.Create(contact);
-        }
-
         public static bool DeleteContact(int id)
         {
-            if (CRUD.IsExist(id))
+            if (ContactsCRUD.IsExist(id))
             {
-                return CRUD.Delete(id);
+                return ContactsCRUD.Delete(id);
             }
             return false;
         }
 
         public static bool IsExistContact(int id)
         {
-            return CRUD.IsExist(id);
+            return ContactsCRUD.IsExist(id);
         }
 
         public static DataTable ContactsDataTable()
         {
-            return CRUD.GetAll();
+            return ContactsCRUD.GetAll();
         }
     }
 }
