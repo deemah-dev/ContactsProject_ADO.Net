@@ -44,7 +44,6 @@ namespace DataAccess
 
         public static Contact Read(int contactID)
         {
-            Contact contact = new Contact();
             string query = "SELECT * FROM Contacts WHERE ContactID = @ContactID";
 
             SqlConnection connection = new SqlConnection(Settings.ConnectionString);
@@ -52,6 +51,7 @@ namespace DataAccess
 
             command.Parameters.AddWithValue(@"ContactID", contactID);
 
+            Contact contact = new Contact(contactID);
             try
             {
                 connection.Open();

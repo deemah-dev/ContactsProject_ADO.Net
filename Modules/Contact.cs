@@ -3,6 +3,15 @@ namespace Modules
 {
     public class Contact
     {
+        public Contact()
+        {
+
+        }
+        public Contact(int iD)
+        {
+            ID = iD;
+        }
+
         public int ID { get; }
 
         public string FirstName { get; set; }

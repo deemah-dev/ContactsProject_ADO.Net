@@ -45,7 +45,7 @@ namespace DataAccess
 
             command.Parameters.AddWithValue(@"CountryID", id);
 
-            Country country = new Country();
+            Country country = new Country(id);
 
             try
             {
@@ -54,6 +54,10 @@ namespace DataAccess
                 if (reader.Read())
                 {
                     country.Name = Convert.ToString(reader["CountryName"]);
+                    if (reader["Code"] != DBNull.Value) country.Code = Convert.ToString(reader["Code"]);
+                    else country.Code = "";
+                    if (reader["PhoneCall"] != DBNull.Value) country.PhoneCall = Convert.ToString(reader["PhoneCall"]);
+                    else country.PhoneCall = "";
                 }
                 reader.Close();
             }
@@ -77,7 +81,7 @@ namespace DataAccess
 
             command.Parameters.AddWithValue(@"CountryName", CountryName);
 
-            Country country = new Country();
+            Country country = null;
 
             try
             {
@@ -85,7 +89,13 @@ namespace DataAccess
                 SqlDataReader reader = command.ExecuteReader();
                 if (reader.Read())
                 {
+                    int ID = Convert.ToInt32(reader["CountryID"]);
+                    country = new Country(ID);
                     country.Name = Convert.ToString(reader["CountryName"]);
+                    if (reader["Code"] != DBNull.Value) country.Code = Convert.ToString(reader["Code"]);
+                    else country.Code = "";
+                    if (reader["PhoneCall"] != DBNull.Value) country.PhoneCall = Convert.ToString(reader["PhoneCall"]);
+                    else country.PhoneCall = "";
                 }
                 reader.Close();
             }

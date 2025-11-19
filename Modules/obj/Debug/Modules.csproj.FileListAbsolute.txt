@@ -1,6 +1,0 @@
-C:\Users\user\source\repos\MyContactsProject\Modules\bin\Debug\Modules.dll
-C:\Users\user\source\repos\MyContactsProject\Modules\bin\Debug\Modules.pdb
-C:\Users\user\source\repos\MyContactsProject\Modules\obj\Debug\Modules.csproj.AssemblyReference.cache
-C:\Users\user\source\repos\MyContactsProject\Modules\obj\Debug\Modules.csproj.CoreCompileInputs.cache
-C:\Users\user\source\repos\MyContactsProject\Modules\obj\Debug\Modules.dll
-C:\Users\user\source\repos\MyContactsProject\Modules\obj\Debug\Modules.pdb

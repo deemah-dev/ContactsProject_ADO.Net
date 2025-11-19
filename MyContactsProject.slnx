@@ -2,5 +2,6 @@
   <Project Path="Business/Business.csproj" Id="5978cea5-7773-4899-94bd-d7a438d556c8" />
   <Project Path="DataAccess/DataAccess.csproj" Id="fe75b1a0-ce0a-4d28-9471-1552b6c86ea6" />
   <Project Path="Modules/Modules.csproj" Id="daf4c635-7ce8-4197-a09c-443098bec62e" />
-  <Project Path="Presentation/Presentation.csproj" Id="f6efedd0-3238-4c1b-83bb-d21896432e57" />
+  <Project Path="Presentation/Presentation_ConsoleApp.csproj" Id="f6efedd0-3238-4c1b-83bb-d21896432e57" />
+  <Project Path="Presentation_WinForms/Presentation_WinForms.csproj" Id="068851c4-5335-4c79-b031-80167fb5a28c" />
 </Solution>

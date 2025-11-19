@@ -8,7 +8,18 @@ namespace Modules
 {
     public class Country
     {
+        public Country()
+        {
+
+        }
+        public Country(int iD)
+        {
+            ID = iD;
+        }
+
         public int ID { get; }
+
+
 
         public string Name { get; set; }
 
